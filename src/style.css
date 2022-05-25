@@ -1,37 +1,36 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
 
-@layer components {
-  /* react-tabs */
-  .react-tabs {
-    @apply [-webkit-tap-highlight-color:transparent] bg-white;
-  }
-  .react-tabs__tab-list {
-    @apply m-0 p-0 flex flex-row;
-  }
-  .react-tabs__tab {
-    @apply
-      flex flex-row items-center justify-center box-border cursor-pointer list-none focus:outline-none
-      w-[170px] h-[50px] mx-[15px] border-[3px] border-solid border-transparent bg-transparent
-      text-center font-bold text-base text-[#333333] leading-none [letter-spacing:0.05em] uppercase
-    ;
-  }
-  .react-tabs__tab--selected {
-    @apply [text-shadow:1px_-1px_14px_#46FFE6] border-[#46FFE6];
-  }
-  .react-tabs__tab--disabled {
-    @apply text-[#4F4F4F] cursor-default;
-  }
-  .react-tabs__tab--warned:after {
-    @apply content-['_'] inline-block w-1.5 h-1.5 rounded-full bg-[#FF906D];
-  }
-  /* .react-tabs__tab:focus {} */
-  /* .react-tabs__tab:focus:after {} */
-  .react-tabs__tab-panel {
-    @apply hidden;
-  }
-  .react-tabs__tab-panel--selected {
-    @apply block;
-  }
+/* react-tabs */
+.react-tabs {
+  @apply [-webkit-tap-highlight-color:transparent] bg-white;
 }
+.react-tabs__tab-list {
+  @apply m-0 p-0 flex flex-row;
+}
+.react-tabs__tab {
+  @apply
+    flex flex-row items-center justify-center box-border cursor-pointer list-none focus:outline-none
+    w-[170px] h-[50px] mx-[15px] border-[3px] border-solid border-transparent bg-transparent
+    text-center font-bold text-base text-[#333333] leading-none [letter-spacing:0.05em] uppercase
+  ;
+}
+.react-tabs__tab--selected {
+  @apply [text-shadow:1px_-1px_14px_#46FFE6] border-[#46FFE6];
+}
+.react-tabs__tab--disabled {
+  @apply text-[#4F4F4F] cursor-default;
+}
+.react-tabs__tab--warned:after {
+  @apply content-['_'] inline-block w-1.5 h-1.5 rounded-full bg-[#FF906D];
+}
+/* .react-tabs__tab:focus {} */
+/* .react-tabs__tab:focus:after {} */
+.react-tabs__tab-panel {
+  @apply hidden;
+}
+.react-tabs__tab-panel--selected {
+  @apply block;
+}
+
+@tailwind utilities;
